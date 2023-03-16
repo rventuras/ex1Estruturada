@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <locale.h>
+main (){
+	setlocale(LC_ALL, "");
+	float s1, s2, r;
+	
+	printf ("Insira seu salario atual: ");
+	scanf ("%f", &s1);
+	printf ("Insira o reajuste: ");
+	scanf ("%f", &r);
+	
+	s2 = s1 * ( r / 100);
+	
+	printf ("Seu novo salário é de %.2f",s1 + s2);
+}
