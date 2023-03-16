@@ -1,0 +1,9 @@
+#include <stdio.h>
+#include <locale.h>
+main(){
+	setlocale(LC_ALL, "");
+	int x, y;
+	printf ("Insira a altura e a largura: ");
+	scanf ("%i%i", &x, &y);
+	printf ("A área é igual a %i", x * y);
+}
