@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <locale.h>
+main (){
+	setlocale(LC_ALL, "");
+	int idade, meses, dias;
+	printf ("Insira sua idade: ");
+	scanf ("%i", &idade);
+	meses = idade * 12;
+	dias = meses * 30;
+	printf ("Você tem %i dias de idade!", dias);
+}
