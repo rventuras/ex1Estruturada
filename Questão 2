@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <locale.h>
+
+main (){
+	setlocale(LC_ALL,"");
+	float raio, area;
+	
+	
+	printf ("Insira o raio do círculo: ");
+	scanf ("%f", &raio);
+	
+	area = 3.14 * (raio * raio);
+	
+	printf ("área = %.2f", area);
+	
+	
+}
