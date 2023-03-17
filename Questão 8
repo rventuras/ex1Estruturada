@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+main (){
+	setlocale(LC_ALL,"");
+	float salario, comi, totalV, carros, totalC, pVendas;
+	printf ("Insira seu salário: ");
+	scanf ("%f", &salario);
+	printf ("Insira o valor que ganha por carro: ");
+	scanf ("%f", &comi);
+	printf ("Insira seu total de vendas: ");
+	scanf ("%f", &totalV);
+	printf ("Para finalizar, insira a quantidade de carros vendidos: ");
+	scanf ("%f", &carros);
+	
+	totalC = carros * comi;
+	
+	pVendas = totalV * 0.05;
+	
+	system ("cls");
+	
+	printf ("Seu salário total é de %.f", salario + totalC + pVendas);
+	
+	
+	
+	
+	
+	
+	
+}
