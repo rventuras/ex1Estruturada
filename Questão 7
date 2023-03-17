@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <locale.h>
+#define  d 0.28 
+#define i 0.45
+main (){
+	setlocale(LC_ALL,"");
+	float precoF, percentualD, percentualI, valorF;
+	
+	printf("Insira o valor do carro: ");
+	scanf ("%f", &precoF);
+	
+	percentualD = precoF * d;
+	percentualI = precoF * i;
+	
+	valorF = precoF + percentualD + percentualI;
+	
+	printf ("Valor com taxas = %.f", valorF);
+	
+}
